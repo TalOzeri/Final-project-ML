@@ -15,7 +15,7 @@ def Load_model():
 regressor = Load_model()
 
 def Show_Predict_Messi_Page():
-    st.image(messi, caption="The ")
+    st.image(messi, caption="🐐")
     st.title("Fifa Messi Rating Prediction")
 
     st.write("""## We need some information to predict the rating""")
