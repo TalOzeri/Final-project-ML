@@ -1,8 +1,12 @@
+from re import I
 import streamlit as st
 import numpy as np
 import pickle
+from PIL import Image
 
+messi = Image.open('Messi.jpg')
 
+st.image(messi)
 
 def Load_model():
     with open('Final_Model_GK.pkl', 'rb') as file:
@@ -13,9 +17,10 @@ def Load_model():
 regressor = Load_model()
 
 def Show_Predict_GK_Page():
+    st.image(messi)
     st.title("Fifa Goalkeepers Rating Prediction")
 
-    st.write("""## We nedd some information to predict the rating""")
+    st.write("""## We need some information to predict the rating""")
 
 
     goalkeeping_diving = st.slider("DIVING", 1, 99, 50)
