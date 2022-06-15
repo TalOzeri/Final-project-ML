@@ -1,9 +1,9 @@
 import streamlit as st
 import numpy as np
 import pickle
-from PIL import Image
+# from PIL import Image
 
-messi = Image.open('Messi.jpg')
+# messi = Image.open('Messi.jpg')
 
 
 def Load_model():
@@ -15,7 +15,7 @@ def Load_model():
 regressor = Load_model()
 
 def Show_Predict_Messi_Page():
-    st.image(messi)
+#     st.image(messi)
     st.title("Fifa Messi Rating Prediction")
 
     st.write("""## We need some information to predict the rating""")
